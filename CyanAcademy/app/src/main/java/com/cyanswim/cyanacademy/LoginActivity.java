@@ -27,11 +27,6 @@ public class LoginActivity extends Activity {
     protected EditText passwordEditText;
     protected Button loginButton;
     protected TextView signUpTextView;
-    //@Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.login);
-//    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
