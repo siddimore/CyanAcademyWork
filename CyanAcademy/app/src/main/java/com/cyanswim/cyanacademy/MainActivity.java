@@ -24,6 +24,7 @@ public class MainActivity extends Activity {
         }
     }
 
+    //Method to Load LoginView
     private void loadLoginView() {
         Intent intent = new Intent(this, LoginActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
