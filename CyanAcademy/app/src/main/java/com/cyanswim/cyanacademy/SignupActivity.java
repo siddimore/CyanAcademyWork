@@ -18,12 +18,6 @@ import constants.Constants;
  * Created by MoreFamily on 4/24/2016.
  */
 public class SignupActivity extends Activity{
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.signup);
-//    }
-
 
     protected EditText passwordEditText;
     protected EditText emailEditText;
@@ -45,8 +39,9 @@ public class SignupActivity extends Activity{
             public void onClick(View v) {
                 String password = passwordEditText.getText().toString();
                 String email = emailEditText.getText().toString();
-
+                //Get Password from EditText
                 password = password.trim();
+                //Get Email from EditText
                 email = email.trim();
 
                 if (password.isEmpty() || email.isEmpty()) {
@@ -77,6 +72,7 @@ public class SignupActivity extends Activity{
                             dialog.show();
                         }
 
+                        //Callback on hitting FireBase Error
                         @Override
                         public void onError(FirebaseError firebaseError) {
                             AlertDialog.Builder builder = new AlertDialog.Builder(SignupActivity.this);
